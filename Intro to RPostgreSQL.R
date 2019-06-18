@@ -1,4 +1,7 @@
-# Create a connection to the database
+# CHeck to see if RPostgreSQL package is installed, and install it if it's not
+if (!require("RPostgreSQL")) install.packages("RPostgreSQL")
+
+# Load RPostgreSQL package
 library('RPostgreSQL')
 
 ## Loading required package: DBI
